@@ -10,11 +10,13 @@ spec:
       apps: chai-app
   template:
     metadata:
+      labels:
+        apps: chai-app
     
     spec:
       containers:
         - name: chai-app
-          image: pkmadhubani/chai-appppp
+          image: pkmadhubani/chai-app
           ports:
             - containerPort: 80
           resources:
